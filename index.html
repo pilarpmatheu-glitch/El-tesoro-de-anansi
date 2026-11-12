@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main class="contenedor">
+
+        <section id="inicio" class="pantalla">
+            <h1>QUIZ GAME</h1>
+            <p>Demostrá cuánto sabés y conseguí la mayor puntuación.</p>
+            <button id="btnComenzar">Comenzar</button>
+        </section>
+
+        <section id="juego" class="pantalla oculto">
+
+            <div class="informacion">
+                <span id="numeroPregunta">Pregunta 1</span>
+                <span id="puntaje">Puntos: 0</span>
+            </div>
+
+            <h2 id="pregunta"></h2>
+
+            <div id="opciones" class="opciones"></div>
+
+            <p id="resultado"></p>
+
+            <button id="btnSiguiente" class="oculto">
+                Siguiente pregunta
+            </button>
+
+        </section>
+
+        <section id="final" class="pantalla oculto">
+            <h1>¡Juego terminado!</h1>
+            <p id="puntajeFinal"></p>
+            <button id="btnReiniciar">Volver a jugar</button>
+        </section>
+
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
